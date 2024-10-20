@@ -14,6 +14,7 @@ export const authUser = async (request, response, next) => {
 
   const token = authorization.split(" ")[1];
   // console.log("TOKEN: ", token);
+  // testing the version control
 
   try {
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
